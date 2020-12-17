@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 public class CommentController {
 
     private CommentService commentService;
-
     public CommentController(CommentService commentService) {
         this.commentService = commentService;
     }

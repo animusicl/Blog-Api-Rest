@@ -28,10 +28,9 @@ public class Comment {
     private String bodyComment;
     private LocalDate date = LocalDate.now();
 
-    //constructor
+ //--------------------------------methods------------------------------------------------
     public Comment() {}
 
-    //getters and setters
     public Long getId() {
         return id;
     }

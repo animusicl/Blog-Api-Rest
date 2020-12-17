@@ -1,13 +1,11 @@
 package com.informatorio.myblog.controller;
 
 import com.informatorio.myblog.model.User;
-import com.informatorio.myblog.repository.UserRepository;
 import com.informatorio.myblog.service.UserService;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.time.LocalDate;
 
 
@@ -15,15 +13,8 @@ import java.time.LocalDate;
 @RequestMapping("/api/v1/user")
 public class UserController {
 
-
-    private UserRepository userRepository;
     private UserService userService;
-
-    public UserController(UserRepository userRepository, UserService userService) {
-        this.userRepository = userRepository;
-        this.userService = userService;
-    }
-
+    public UserController(UserService userService) { this.userService = userService; }
 
     @PostMapping
     public ResponseEntity<?> createUser (@RequestBody User newUser){

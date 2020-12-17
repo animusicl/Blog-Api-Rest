@@ -11,12 +11,6 @@ public class CommentDTO {
     private String bodyComment;
     private LocalDate date;
 
-    public CommentDTO(Long id, String bodyComment, LocalDate date) {
-        this.Id = id;
-        this.bodyComment = bodyComment;
-        this.date = date;
-    }
-
     public CommentDTO(Long id) {
         Id = id;
     }
@@ -24,6 +18,12 @@ public class CommentDTO {
     public CommentDTO(Comment comment) {
         this.Id = comment.getId();
         this.bodyComment = comment.getBodyComment();
+    }
+
+    public CommentDTO(Long id, String bodyComment, LocalDate date) {
+        this.Id = id;
+        this.bodyComment = bodyComment;
+        this.date = date;
     }
 
     public Long getId() {
