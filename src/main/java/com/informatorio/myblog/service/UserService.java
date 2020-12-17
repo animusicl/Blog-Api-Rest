@@ -1,13 +1,10 @@
 package com.informatorio.myblog.service;
-import com.fasterxml.jackson.databind.ser.std.SqlDateSerializer;
+
 import com.informatorio.myblog.DTO.UserDTO;
 import com.informatorio.myblog.model.User;
 import com.informatorio.myblog.repository.UserRepository;
 import org.springframework.stereotype.Service;
-
-import java.text.DateFormat;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -15,10 +12,10 @@ import java.util.stream.Collectors;
 public class UserService {
 
     private UserRepository userRepository;
-
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
+
 
     public UserDTO createUser(User newUser) { return new UserDTO(userRepository.save(newUser)); }
 

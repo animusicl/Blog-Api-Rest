@@ -46,14 +46,12 @@ public class User {
     @JsonManagedReference(value="commentUser")
     private List <Comment> comments = new ArrayList<>();
 
-    //constructors
     public User(Long id) { //constructor
         this.id = id;
     }
 
     public User() {}
 
-    //getters and setters
     public Long getId() { return id; }
 
     public void setId(Long id) { this.id = id; }

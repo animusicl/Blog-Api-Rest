@@ -28,7 +28,7 @@ public class Comment {
     private String bodyComment;
     private LocalDate date = LocalDate.now();
 
- //--------------------------------methods------------------------------------------------
+
     public Comment() {}
 
     public Long getId() {

@@ -10,11 +10,9 @@ import java.util.stream.Collectors;
 @Service
 public class CommentService {
 
-    public CommentService(CommentRepository commentRepository) {
-        this.commentRepository = commentRepository;
-    }
-
     private CommentRepository commentRepository;
+    public CommentService(CommentRepository commentRepository) { this.commentRepository = commentRepository; }
+
 
     public CommentDTO createComment(Comment c) {
         return new CommentDTO(commentRepository.save(c));
@@ -24,10 +22,7 @@ public class CommentService {
         return commentRepository.findAll().stream().map(CommentDTO::new).collect(Collectors.toList());
     }
 
-    public Comment findComment(Long commentId) {
-
-        return commentRepository.getOne(commentId);
-    }
+    public Comment findComment(Long commentId) { return commentRepository.getOne(commentId); }
 
     public CommentDTO updateComment(Comment updateC) {
         return new CommentDTO(commentRepository.save(updateC));
@@ -38,6 +33,6 @@ public class CommentService {
     }
 
     public List<Comment> getCommentsByPost(Long id, Integer num) {
-        return commentRepository.CommentsByPostId(id, num);}
+        return commentRepository.CommentsByPostId(id, num);  }
 
 }

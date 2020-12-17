@@ -11,10 +11,10 @@ import java.util.stream.Collectors;
 public class PostService {
 
     private PostRepository postRepository;
-
     public PostService(PostRepository postRepository) {
         this.postRepository = postRepository;
     }
+
 
     public PostDTO createPost(Post newPost) {
         return new PostDTO(postRepository.save(newPost));
