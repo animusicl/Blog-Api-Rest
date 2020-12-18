@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Jeff\",\r\n    \"lastName\": \"Buckley\",\r\n    \"email\": \"jeffbuckley@gmail.com\",\r\n    \"password\": \"password88\",\r\n    \"singUpDate\": \"2020-12-13\",\r\n    \"country\": \"USA\",\r\n    \"state\": \"California\",\r\n    \"city\": \"Anaheim\"\r\n}",
+							"raw": "\r\n{\r\n    \"name\": \"Bjork\",\r\n    \"lastName\": \"Guðmundsdóttir\",\r\n    \"email\": \"bjork@gmail.com\",\r\n    \"password\": \"passwordBJ\",\r\n    \"country\": \"Ísland\",\r\n    \"state\": \"Reikiavik\",\r\n    \"city\": \"Reykjavíkurborg\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -38,6 +38,63 @@
 						}
 					},
 					"response": [
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n    \"name\": \"Bjork\",\r\n    \"lastName\": \"Guðmundsdóttir\",\r\n    \"email\": \"bjork@gmail.com\",\r\n    \"password\": \"passwordBJ\",\r\n    \"country\": \"Ísland\",\r\n    \"state\": \"Reikiavik\",\r\n    \"city\": \"Reykjavíkurborg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"user"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 20:16:36 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 9,\n    \"name\": \"Bjork\",\n    \"lastName\": \"Guðmundsdóttir\",\n    \"email\": \"bjork@gmail.com\",\n    \"singUpDate\": \"2020-12-18\",\n    \"country\": \"Ísland\",\n    \"state\": \"Reikiavik\",\n    \"city\": \"Reykjavíkurborg\",\n    \"postDto\": [],\n    \"commentDto\": []\n}"
+						},
 						{
 							"name": "Create User",
 							"originalRequest": {
@@ -94,6 +151,63 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"id\": 1,\n    \"name\": \"Jeff\",\n    \"lastName\": \"Buckley\",\n    \"email\": \"jeffbuckley@gmail.com\",\n    \"singUpDate\": \"2020-12-13T00:00:00.000+00:00\",\n    \"country\": \"USA\",\n    \"state\": \"California\",\n    \"city\": \"Anaheim\",\n    \"postDto\": [],\n    \"commentDto\": []\n}"
+						},
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n    \"name\": \"Eliminame\",\r\n    \"lastName\": \"Buckley\",\r\n    \"email\": \"jeffbuck555@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"country\": \"USA\",\r\n    \"state\": \"California\",\r\n    \"city\": \"Anaheim\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"user"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Dec 2020 15:01:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"name\": \"Eliminame\",\n    \"lastName\": \"Buckley\",\n    \"email\": \"jeffbuck555@gmail.com\",\n    \"singUpDate\": \"2020-12-17\",\n    \"country\": \"USA\",\n    \"state\": \"California\",\n    \"city\": \"Anaheim\",\n    \"postDto\": [],\n    \"commentDto\": []\n}"
 						}
 					]
 				},
@@ -186,22 +300,683 @@
 							],
 							"cookie": [],
 							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Jeff\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"jeffbuckley@gmail.com\",\n        \"singUpDate\": \"2020-12-13T00:00:00.000+00:00\",\n        \"country\": \"USA\",\n        \"state\": \"California\",\n        \"city\": \"Anaheim\",\n        \"postDto\": [],\n        \"commentDto\": []\n    }\n]"
+						},
+						{
+							"name": "Get all users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n    \"description\": \"Lyrics\",\r\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\r\n    \"user\": 1,\r\n    \"dateCreated\": \"2020-12-13\",\r\n    \"published\": true\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 20:17:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Jeff\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"jeffbuckley@gmail.com\",\n        \"singUpDate\": \"2020-12-16\",\n        \"country\": \"USA\",\n        \"state\": \"California\",\n        \"city\": \"Anaheim\",\n        \"postDto\": [\n            {\n                \"id\": 1,\n                \"title\": \"Soy un post que se acaba de editar\",\n                \"description\": \"Lyrics\",\n                \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                \"userDto\": {\n                    \"id\": 1\n                },\n                \"dateCreated\": \"2020-12-13\",\n                \"published\": true,\n                \"commentDto\": [\n                    {\n                        \"bodyComment\": \"Hola probando que este comentario funcione\",\n                        \"id\": 1\n                    },\n                    {\n                        \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n                        \"id\": 2\n                    },\n                    {\n                        \"bodyComment\": \"soy un comentario probando cosas...\",\n                        \"id\": 4\n                    },\n                    {\n                        \"bodyComment\": \"soy OTRO comentario de post 1...\",\n                        \"id\": 7\n                    }\n                ]\n            },\n            {\n                \"id\": 2,\n                \"title\": \"Lover, You Should've Come Over\",\n                \"description\": \"Lyrics\",\n                \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                \"userDto\": {\n                    \"id\": 1\n                },\n                \"dateCreated\": \"2020-12-11\",\n                \"published\": true,\n                \"commentDto\": [\n                    {\n                        \"bodyComment\": \"soy un comentario de post 2...\",\n                        \"id\": 5\n                    },\n                    {\n                        \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                        \"id\": 6\n                    }\n                ]\n            },\n            {\n                \"id\": 3,\n                \"title\": \"Probando post 5\",\n                \"description\": \"Lyrics\",\n                \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                \"userDto\": {\n                    \"id\": 1\n                },\n                \"dateCreated\": \"2020-12-20\",\n                \"published\": true,\n                \"commentDto\": []\n            }\n        ],\n        \"commentDto\": [\n            {\n                \"bodyComment\": \"Hola probando que este comentario funcione\",\n                \"date\": \"2020-12-16\",\n                \"id\": 1\n            },\n            {\n                \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n                \"date\": \"2020-12-16\",\n                \"id\": 2\n            },\n            {\n                \"bodyComment\": \"soy un comentario probando cosas...\",\n                \"date\": \"2020-12-16\",\n                \"id\": 4\n            },\n            {\n                \"bodyComment\": \"soy un comentario de post 2...\",\n                \"date\": \"2020-12-17\",\n                \"id\": 5\n            },\n            {\n                \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                \"date\": \"2020-12-17\",\n                \"id\": 6\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Usuario 2\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"usuario2@gmail.com\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"Argentina\",\n        \"state\": \"Chaquito\",\n        \"city\": \"Resistencia\",\n        \"postDto\": [],\n        \"commentDto\": [\n            {\n                \"bodyComment\": \"soy OTRO comentario de post 1...\",\n                \"date\": \"2020-12-18\",\n                \"id\": 7\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Jeff Editado\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"jeffeditado22@gmail.com\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"USA\",\n        \"state\": \"California\",\n        \"city\": \"Anaheim\",\n        \"postDto\": [\n            {\n                \"id\": 6,\n                \"title\": \"Probando post 5\",\n                \"description\": \"Lyrics\",\n                \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                \"userDto\": {\n                    \"id\": 3\n                },\n                \"dateCreated\": \"2020-12-20\",\n                \"published\": true,\n                \"commentDto\": []\n            },\n            {\n                \"id\": 7,\n                \"title\": \"Soy un post que no me voy a publicar\",\n                \"description\": \"Lyrics\",\n                \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                \"userDto\": {\n                    \"id\": 3\n                },\n                \"dateCreated\": \"2020-12-20\",\n                \"published\": false,\n                \"commentDto\": []\n            }\n        ],\n        \"commentDto\": []\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Eliminame\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"jeffbuck555@gmail.com\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"USA\",\n        \"state\": \"California\",\n        \"city\": \"Anaheim\",\n        \"postDto\": [],\n        \"commentDto\": []\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Eliminame\",\n        \"lastName\": \"HOLA SOY EDITADO\",\n        \"email\": \"jeffbuck77@gmail.com\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"USA\",\n        \"state\": \"California\",\n        \"city\": \"Anaheim\",\n        \"postDto\": [],\n        \"commentDto\": []\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Bjork\",\n        \"lastName\": \"Guðmundsdóttir\",\n        \"email\": \"bjork@gmail.com\",\n        \"singUpDate\": \"2020-12-18\",\n        \"country\": \"Ísland\",\n        \"state\": \"Reikiavik\",\n        \"city\": \"Reykjavíkurborg\",\n        \"postDto\": [],\n        \"commentDto\": []\n    }\n]"
 						}
 					]
 				},
 				{
 					"name": "Get Users By Date After",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:8080/api/v1/user/?date=2020-12-16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2020-12-16"
+								}
+							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get Users By Date After",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/user/?date=2020-12-16",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"user",
+										""
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2020-12-16"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 20:19:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Usuario 2\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"usuario2@gmail.com\",\n        \"password\": \"password88\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"Argentina\",\n        \"state\": \"Chaquito\",\n        \"city\": \"Resistencia\",\n        \"posts\": [],\n        \"comments\": [\n            {\n                \"id\": 7,\n                \"bodyComment\": \"soy OTRO comentario de post 1...\",\n                \"date\": \"2020-12-18\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Jeff Editado\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"jeffeditado22@gmail.com\",\n        \"password\": \"passwordjb\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"USA\",\n        \"state\": \"California\",\n        \"city\": \"Anaheim\",\n        \"posts\": [\n            {\n                \"id\": 6,\n                \"title\": \"Probando post 5\",\n                \"description\": \"Lyrics\",\n                \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                \"dateCreated\": \"2020-12-20\",\n                \"published\": true,\n                \"comments\": []\n            },\n            {\n                \"id\": 7,\n                \"title\": \"Soy un post que no me voy a publicar\",\n                \"description\": \"Lyrics\",\n                \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                \"dateCreated\": \"2020-12-20\",\n                \"published\": false,\n                \"comments\": []\n            }\n        ],\n        \"comments\": []\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Eliminame\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"jeffbuck555@gmail.com\",\n        \"password\": \"password\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"USA\",\n        \"state\": \"California\",\n        \"city\": \"Anaheim\",\n        \"posts\": [],\n        \"comments\": []\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Eliminame\",\n        \"lastName\": \"HOLA SOY EDITADO\",\n        \"email\": \"jeffbuck77@gmail.com\",\n        \"password\": \"passwordlala\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"USA\",\n        \"state\": \"California\",\n        \"city\": \"Anaheim\",\n        \"posts\": [],\n        \"comments\": []\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Bjork\",\n        \"lastName\": \"Guðmundsdóttir\",\n        \"email\": \"bjork@gmail.com\",\n        \"password\": \"passwordBJ\",\n        \"singUpDate\": \"2020-12-18\",\n        \"country\": \"Ísland\",\n        \"state\": \"Reikiavik\",\n        \"city\": \"Reykjavíkurborg\",\n        \"posts\": [],\n        \"comments\": []\n    }\n]"
+						},
+						{
+							"name": "Get Users By Date After",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/user/?date=2020-12-16",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"user",
+										""
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2020-12-16"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Dec 2020 06:44:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Usuario 2\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"usuario2@gmail.com\",\n        \"password\": \"password88\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"Argentina\",\n        \"state\": \"Chaquito\",\n        \"city\": \"Resistencia\",\n        \"posts\": [],\n        \"comments\": []\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Usuario 3\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"usuario33@gmail.com\",\n        \"password\": \"password33\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"Argentina\",\n        \"state\": \"Chaquito\",\n        \"city\": \"Resistencia\",\n        \"posts\": [],\n        \"comments\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n       \"name\": \"Eddie\",\r\n        \"lastName\": \"HOLA SOY EDITADO\",\r\n        \"email\": \"jeffbuck77@gmail.com\",\r\n        \"password\": \"passwordlala\",\r\n        \"singUpDate\": \"2020-12-17\",\r\n        \"country\": \"USA\",\r\n        \"state\": \"California\",\r\n        \"city\": \"Anaheim\"\r\n\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080//api/v1/user/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"user",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update User",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n       \"name\": \"Eddie\",\r\n        \"lastName\": \"HOLA SOY EDITADO\",\r\n        \"email\": \"jeffbuck77@gmail.com\",\r\n        \"password\": \"passwordlala\",\r\n        \"singUpDate\": \"2020-12-17\",\r\n        \"country\": \"USA\",\r\n        \"state\": \"California\",\r\n        \"city\": \"Anaheim\"\r\n\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/user/8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"user",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 20:27:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 8,\n    \"name\": \"Eddie\",\n    \"lastName\": \"HOLA SOY EDITADO\",\n    \"email\": \"jeffbuck77@gmail.com\",\n    \"singUpDate\": \"2020-12-17\",\n    \"country\": \"USA\",\n    \"state\": \"California\",\n    \"city\": \"Anaheim\",\n    \"postDto\": [],\n    \"commentDto\": []\n}"
+						},
+						{
+							"name": "Update User",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Jeff Editado\",\r\n    \"lastName\": \"Buckley\",\r\n    \"email\": \"jeffeditado22@gmail.com\",\r\n    \"password\": \"passwordjb\",\r\n    \"country\": \"USA\",\r\n    \"state\": \"California\",\r\n    \"city\": \"Anaheim\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/user/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"user",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Dec 2020 06:56:43 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"Jeff Editado\",\n    \"lastName\": \"Buckley\",\n    \"email\": \"jeffeditado22@gmail.com\",\n    \"singUpDate\": \"2020-12-17\",\n    \"country\": \"USA\",\n    \"state\": \"California\",\n    \"city\": \"Anaheim\",\n    \"postDto\": [],\n    \"commentDto\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080//api/v1/user/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"user",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete User",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/user/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"user",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Dec 2020 07:01:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get usuarios from Resistencia",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080//api/v1/user/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"user",
+								"city"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get usuarios from Resistencia",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/user/city",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"user",
+										"city"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 20:31:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Usuario 2\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"usuario2@gmail.com\",\n        \"password\": \"password88\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"Argentina\",\n        \"state\": \"Chaquito\",\n        \"city\": \"Resistencia\",\n        \"posts\": [],\n        \"comments\": [\n            {\n                \"id\": 7,\n                \"bodyComment\": \"soy OTRO comentario de post 1...\",\n                \"date\": \"2020-12-18\"\n            }\n        ]\n    }\n]"
+						},
+						{
+							"name": "Get usuarios from Resistencia",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/user/city",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"user",
+										"city"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 20:31:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Usuario 2\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"usuario2@gmail.com\",\n        \"password\": \"password88\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"Argentina\",\n        \"state\": \"Chaquito\",\n        \"city\": \"Resistencia\",\n        \"posts\": [],\n        \"comments\": [\n            {\n                \"id\": 7,\n                \"bodyComment\": \"soy OTRO comentario de post 1...\",\n                \"date\": \"2020-12-18\"\n            }\n        ]\n    }\n]"
+						},
+						{
+							"name": "Get usuarios from Resistencia",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/user/city",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"user",
+										"city"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Dec 2020 07:03:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Usuario 2\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"usuario2@gmail.com\",\n        \"password\": \"password88\",\n        \"singUpDate\": \"2020-12-17\",\n        \"country\": \"Argentina\",\n        \"state\": \"Chaquito\",\n        \"city\": \"Resistencia\",\n        \"posts\": [],\n        \"comments\": []\n    }\n]"
+						}
+					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Post",
@@ -213,7 +988,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Lover, You Should've Come Over\",\r\n    \"description\": \"Lyrics\",\r\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\r\n    \"user\": 1,\r\n    \"dateCreated\": \"2020-12-13\",\r\n    \"published\": true\r\n}\r\n",
+							"raw": "{\r\n    \"title\": \"Probando post 5\",\r\n    \"description\": \"Lyrics\",\r\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\r\n    \"user\": 3,\r\n    \"dateCreated\": \"2020-12-20\",\r\n    \"published\": true\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -235,7 +1010,179 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Create Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Soy un post que no me voy a publicar\",\r\n    \"description\": \"Lyrics\",\r\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\r\n    \"user\": 3,\r\n    \"dateCreated\": \"2020-12-20\",\r\n    \"published\": false\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/post",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"post"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 19:54:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"title\": \"Soy un post que no me voy a publicar\",\n    \"description\": \"Lyrics\",\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n    \"userDto\": {\n        \"id\": 3,\n        \"singUpDate\": \"2020-12-18\",\n        \"postDto\": [],\n        \"commentDto\": []\n    },\n    \"dateCreated\": \"2020-12-20\",\n    \"published\": false,\n    \"commentDto\": []\n}"
+						},
+						{
+							"name": "Create Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Probando post 5\",\r\n    \"description\": \"Lyrics\",\r\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\r\n    \"user\": 3,\r\n    \"dateCreated\": \"2020-12-20\",\r\n    \"published\": true\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/post",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"post"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Dec 2020 07:05:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"title\": \"Probando post 5\",\n    \"description\": \"Lyrics\",\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n    \"userDto\": {\n        \"id\": 3,\n        \"singUpDate\": \"2020-12-17\",\n        \"postDto\": [],\n        \"commentDto\": []\n    },\n    \"dateCreated\": \"2020-12-20\",\n    \"published\": true,\n    \"commentDto\": []\n}"
+						},
+						{
+							"name": "Create Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Probando post 5\",\r\n    \"description\": \"Lyrics\",\r\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\r\n    \"user\": 3,\r\n    \"dateCreated\": \"2020-12-20\",\r\n    \"published\": true\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/post",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"post"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Dec 2020 07:05:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"title\": \"Probando post 5\",\n    \"description\": \"Lyrics\",\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n    \"userDto\": {\n        \"id\": 3,\n        \"singUpDate\": \"2020-12-17\",\n        \"postDto\": [],\n        \"commentDto\": []\n    },\n    \"dateCreated\": \"2020-12-20\",\n    \"published\": true,\n    \"commentDto\": []\n}"
+						}
+					]
 				},
 				{
 					"name": "Get all post",
@@ -326,6 +1273,63 @@
 							],
 							"cookie": [],
 							"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Lover, You Should've Come Over\",\n        \"description\": \"Lyrics\",\n        \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n        \"dateCreated\": \"2020-12-12\",\n        \"published\": true,\n        \"comments\": []\n    }\n]"
+						},
+						{
+							"name": "Get all post",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Probando test no publicados 2\",\r\n    \"description\": \"Lyrics\",\r\n    \"body\": \"Soy una publicacion que no va a publicarse\",\r\n    \"user\": 1,\r\n    \"dateCreated\": \"2020-12-13\",\r\n    \"published\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/post",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"post"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 19:54:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Soy un post que se acaba de editar\",\n        \"description\": \"Lyrics\",\n        \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n        \"userDto\": {\n            \"id\": 1,\n            \"name\": \"Jeff\",\n            \"lastName\": \"Buckley\",\n            \"email\": \"jeffbuckley@gmail.com\",\n            \"singUpDate\": \"2020-12-16\",\n            \"country\": \"USA\",\n            \"state\": \"California\",\n            \"city\": \"Anaheim\",\n            \"postDto\": [\n                {\n                    \"id\": 1,\n                    \"title\": \"Soy un post que se acaba de editar\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 1\n                    },\n                    \"dateCreated\": \"2020-12-13\",\n                    \"published\": true,\n                    \"commentDto\": [\n                        {\n                            \"bodyComment\": \"Hola probando que este comentario funcione\",\n                            \"id\": 1\n                        },\n                        {\n                            \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n                            \"id\": 2\n                        },\n                        {\n                            \"bodyComment\": \"soy un comentario probando cosas...\",\n                            \"id\": 4\n                        },\n                        {\n                            \"bodyComment\": \"soy OTRO comentario de post 1...\",\n                            \"id\": 7\n                        }\n                    ]\n                },\n                {\n                    \"id\": 2,\n                    \"title\": \"Lover, You Should've Come Over\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 1\n                    },\n                    \"dateCreated\": \"2020-12-11\",\n                    \"published\": true,\n                    \"commentDto\": [\n                        {\n                            \"bodyComment\": \"soy un comentario de post 2...\",\n                            \"id\": 5\n                        },\n                        {\n                            \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                            \"id\": 6\n                        }\n                    ]\n                },\n                {\n                    \"id\": 3,\n                    \"title\": \"Probando post 5\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 1\n                    },\n                    \"dateCreated\": \"2020-12-20\",\n                    \"published\": true,\n                    \"commentDto\": []\n                }\n            ],\n            \"commentDto\": [\n                {\n                    \"bodyComment\": \"Hola probando que este comentario funcione\",\n                    \"date\": \"2020-12-16\",\n                    \"id\": 1\n                },\n                {\n                    \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n                    \"date\": \"2020-12-16\",\n                    \"id\": 2\n                },\n                {\n                    \"bodyComment\": \"soy un comentario probando cosas...\",\n                    \"date\": \"2020-12-16\",\n                    \"id\": 4\n                },\n                {\n                    \"bodyComment\": \"soy un comentario de post 2...\",\n                    \"date\": \"2020-12-17\",\n                    \"id\": 5\n                },\n                {\n                    \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                    \"date\": \"2020-12-17\",\n                    \"id\": 6\n                }\n            ]\n        },\n        \"dateCreated\": \"2020-12-13\",\n        \"published\": true,\n        \"commentDto\": [\n            {\n                \"bodyComment\": \"Hola probando que este comentario funcione\",\n                \"date\": \"2020-12-16\",\n                \"id\": 1\n            },\n            {\n                \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n                \"date\": \"2020-12-16\",\n                \"id\": 2\n            },\n            {\n                \"bodyComment\": \"soy un comentario probando cosas...\",\n                \"date\": \"2020-12-16\",\n                \"id\": 4\n            },\n            {\n                \"bodyComment\": \"soy OTRO comentario de post 1...\",\n                \"date\": \"2020-12-18\",\n                \"id\": 7\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Lover, You Should've Come Over\",\n        \"description\": \"Lyrics\",\n        \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n        \"userDto\": {\n            \"id\": 1,\n            \"name\": \"Jeff\",\n            \"lastName\": \"Buckley\",\n            \"email\": \"jeffbuckley@gmail.com\",\n            \"singUpDate\": \"2020-12-16\",\n            \"country\": \"USA\",\n            \"state\": \"California\",\n            \"city\": \"Anaheim\",\n            \"postDto\": [\n                {\n                    \"id\": 1,\n                    \"title\": \"Soy un post que se acaba de editar\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 1\n                    },\n                    \"dateCreated\": \"2020-12-13\",\n                    \"published\": true,\n                    \"commentDto\": [\n                        {\n                            \"bodyComment\": \"Hola probando que este comentario funcione\",\n                            \"id\": 1\n                        },\n                        {\n                            \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n                            \"id\": 2\n                        },\n                        {\n                            \"bodyComment\": \"soy un comentario probando cosas...\",\n                            \"id\": 4\n                        },\n                        {\n                            \"bodyComment\": \"soy OTRO comentario de post 1...\",\n                            \"id\": 7\n                        }\n                    ]\n                },\n                {\n                    \"id\": 2,\n                    \"title\": \"Lover, You Should've Come Over\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 1\n                    },\n                    \"dateCreated\": \"2020-12-11\",\n                    \"published\": true,\n                    \"commentDto\": [\n                        {\n                            \"bodyComment\": \"soy un comentario de post 2...\",\n                            \"id\": 5\n                        },\n                        {\n                            \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                            \"id\": 6\n                        }\n                    ]\n                },\n                {\n                    \"id\": 3,\n                    \"title\": \"Probando post 5\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 1\n                    },\n                    \"dateCreated\": \"2020-12-20\",\n                    \"published\": true,\n                    \"commentDto\": []\n                }\n            ],\n            \"commentDto\": [\n                {\n                    \"bodyComment\": \"Hola probando que este comentario funcione\",\n                    \"date\": \"2020-12-16\",\n                    \"id\": 1\n                },\n                {\n                    \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n                    \"date\": \"2020-12-16\",\n                    \"id\": 2\n                },\n                {\n                    \"bodyComment\": \"soy un comentario probando cosas...\",\n                    \"date\": \"2020-12-16\",\n                    \"id\": 4\n                },\n                {\n                    \"bodyComment\": \"soy un comentario de post 2...\",\n                    \"date\": \"2020-12-17\",\n                    \"id\": 5\n                },\n                {\n                    \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                    \"date\": \"2020-12-17\",\n                    \"id\": 6\n                }\n            ]\n        },\n        \"dateCreated\": \"2020-12-11\",\n        \"published\": true,\n        \"commentDto\": [\n            {\n                \"bodyComment\": \"soy un comentario de post 2...\",\n                \"date\": \"2020-12-17\",\n                \"id\": 5\n            },\n            {\n                \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                \"date\": \"2020-12-17\",\n                \"id\": 6\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Probando post 5\",\n        \"description\": \"Lyrics\",\n        \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n        \"userDto\": {\n            \"id\": 1,\n            \"name\": \"Jeff\",\n            \"lastName\": \"Buckley\",\n            \"email\": \"jeffbuckley@gmail.com\",\n            \"singUpDate\": \"2020-12-16\",\n            \"country\": \"USA\",\n            \"state\": \"California\",\n            \"city\": \"Anaheim\",\n            \"postDto\": [\n                {\n                    \"id\": 1,\n                    \"title\": \"Soy un post que se acaba de editar\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 1\n                    },\n                    \"dateCreated\": \"2020-12-13\",\n                    \"published\": true,\n                    \"commentDto\": [\n                        {\n                            \"bodyComment\": \"Hola probando que este comentario funcione\",\n                            \"id\": 1\n                        },\n                        {\n                            \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n                            \"id\": 2\n                        },\n                        {\n                            \"bodyComment\": \"soy un comentario probando cosas...\",\n                            \"id\": 4\n                        },\n                        {\n                            \"bodyComment\": \"soy OTRO comentario de post 1...\",\n                            \"id\": 7\n                        }\n                    ]\n                },\n                {\n                    \"id\": 2,\n                    \"title\": \"Lover, You Should've Come Over\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 1\n                    },\n                    \"dateCreated\": \"2020-12-11\",\n                    \"published\": true,\n                    \"commentDto\": [\n                        {\n                            \"bodyComment\": \"soy un comentario de post 2...\",\n                            \"id\": 5\n                        },\n                        {\n                            \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                            \"id\": 6\n                        }\n                    ]\n                },\n                {\n                    \"id\": 3,\n                    \"title\": \"Probando post 5\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 1\n                    },\n                    \"dateCreated\": \"2020-12-20\",\n                    \"published\": true,\n                    \"commentDto\": []\n                }\n            ],\n            \"commentDto\": [\n                {\n                    \"bodyComment\": \"Hola probando que este comentario funcione\",\n                    \"date\": \"2020-12-16\",\n                    \"id\": 1\n                },\n                {\n                    \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n                    \"date\": \"2020-12-16\",\n                    \"id\": 2\n                },\n                {\n                    \"bodyComment\": \"soy un comentario probando cosas...\",\n                    \"date\": \"2020-12-16\",\n                    \"id\": 4\n                },\n                {\n                    \"bodyComment\": \"soy un comentario de post 2...\",\n                    \"date\": \"2020-12-17\",\n                    \"id\": 5\n                },\n                {\n                    \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                    \"date\": \"2020-12-17\",\n                    \"id\": 6\n                }\n            ]\n        },\n        \"dateCreated\": \"2020-12-20\",\n        \"published\": true,\n        \"commentDto\": []\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Probando post 5\",\n        \"description\": \"Lyrics\",\n        \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n        \"userDto\": {\n            \"id\": 3,\n            \"name\": \"Jeff Editado\",\n            \"lastName\": \"Buckley\",\n            \"email\": \"jeffeditado22@gmail.com\",\n            \"singUpDate\": \"2020-12-17\",\n            \"country\": \"USA\",\n            \"state\": \"California\",\n            \"city\": \"Anaheim\",\n            \"postDto\": [\n                {\n                    \"id\": 6,\n                    \"title\": \"Probando post 5\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 3\n                    },\n                    \"dateCreated\": \"2020-12-20\",\n                    \"published\": true,\n                    \"commentDto\": []\n                },\n                {\n                    \"id\": 7,\n                    \"title\": \"Soy un post que no me voy a publicar\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 3\n                    },\n                    \"dateCreated\": \"2020-12-20\",\n                    \"published\": false,\n                    \"commentDto\": []\n                }\n            ],\n            \"commentDto\": []\n        },\n        \"dateCreated\": \"2020-12-20\",\n        \"published\": true,\n        \"commentDto\": []\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Soy un post que no me voy a publicar\",\n        \"description\": \"Lyrics\",\n        \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n        \"userDto\": {\n            \"id\": 3,\n            \"name\": \"Jeff Editado\",\n            \"lastName\": \"Buckley\",\n            \"email\": \"jeffeditado22@gmail.com\",\n            \"singUpDate\": \"2020-12-17\",\n            \"country\": \"USA\",\n            \"state\": \"California\",\n            \"city\": \"Anaheim\",\n            \"postDto\": [\n                {\n                    \"id\": 6,\n                    \"title\": \"Probando post 5\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 3\n                    },\n                    \"dateCreated\": \"2020-12-20\",\n                    \"published\": true,\n                    \"commentDto\": []\n                },\n                {\n                    \"id\": 7,\n                    \"title\": \"Soy un post que no me voy a publicar\",\n                    \"description\": \"Lyrics\",\n                    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                    \"userDto\": {\n                        \"id\": 3\n                    },\n                    \"dateCreated\": \"2020-12-20\",\n                    \"published\": false,\n                    \"commentDto\": []\n                }\n            ],\n            \"commentDto\": []\n        },\n        \"dateCreated\": \"2020-12-20\",\n        \"published\": false,\n        \"commentDto\": []\n    }\n]"
 						}
 					]
 				},
@@ -334,11 +1338,91 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Soy un post que se acaba de editar\",\r\n    \"description\": \"Lyrics\",\r\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\r\n    \"published\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:8080//api/v1/post/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"post",
+								"1"
+							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Update Post",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Soy un post que se acaba de editar\",\r\n    \"description\": \"Lyrics\",\r\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\r\n    \"published\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/post/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"post",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 19:58:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"title\": \"Soy un post que se acaba de editar\",\n    \"description\": \"Lyrics\",\n    \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n    \"userDto\": {\n        \"id\": 1,\n        \"name\": \"Jeff\",\n        \"lastName\": \"Buckley\",\n        \"email\": \"jeffbuckley@gmail.com\",\n        \"singUpDate\": \"2020-12-16\",\n        \"country\": \"USA\",\n        \"state\": \"California\",\n        \"city\": \"Anaheim\",\n        \"postDto\": [\n            {\n                \"id\": 1,\n                \"title\": \"Soy un post que se acaba de editar\",\n                \"description\": \"Lyrics\",\n                \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                \"userDto\": {\n                    \"id\": 1\n                },\n                \"dateCreated\": \"2020-12-13\",\n                \"published\": true,\n                \"commentDto\": [\n                    {\n                        \"bodyComment\": \"Hola probando que este comentario funcione\",\n                        \"id\": 1\n                    },\n                    {\n                        \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n                        \"id\": 2\n                    },\n                    {\n                        \"bodyComment\": \"soy un comentario probando cosas...\",\n                        \"id\": 4\n                    },\n                    {\n                        \"bodyComment\": \"soy OTRO comentario de post 1...\",\n                        \"id\": 7\n                    }\n                ]\n            },\n            {\n                \"id\": 2,\n                \"title\": \"Lover, You Should've Come Over\",\n                \"description\": \"Lyrics\",\n                \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                \"userDto\": {\n                    \"id\": 1\n                },\n                \"dateCreated\": \"2020-12-11\",\n                \"published\": true,\n                \"commentDto\": [\n                    {\n                        \"bodyComment\": \"soy un comentario de post 2...\",\n                        \"id\": 5\n                    },\n                    {\n                        \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                        \"id\": 6\n                    }\n                ]\n            },\n            {\n                \"id\": 3,\n                \"title\": \"Probando post 5\",\n                \"description\": \"Lyrics\",\n                \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n                \"userDto\": {\n                    \"id\": 1\n                },\n                \"dateCreated\": \"2020-12-20\",\n                \"published\": true,\n                \"commentDto\": []\n            }\n        ],\n        \"commentDto\": [\n            {\n                \"bodyComment\": \"Hola probando que este comentario funcione\",\n                \"date\": \"2020-12-16\",\n                \"id\": 1\n            },\n            {\n                \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n                \"date\": \"2020-12-16\",\n                \"id\": 2\n            },\n            {\n                \"bodyComment\": \"soy un comentario probando cosas...\",\n                \"date\": \"2020-12-16\",\n                \"id\": 4\n            },\n            {\n                \"bodyComment\": \"soy un comentario de post 2...\",\n                \"date\": \"2020-12-17\",\n                \"id\": 5\n            },\n            {\n                \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                \"date\": \"2020-12-17\",\n                \"id\": 6\n            }\n        ]\n    },\n    \"dateCreated\": \"2020-12-13\",\n    \"published\": true,\n    \"commentDto\": [\n        {\n            \"bodyComment\": \"Hola probando que este comentario funcione\",\n            \"date\": \"2020-12-16\",\n            \"id\": 1\n        },\n        {\n            \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n            \"date\": \"2020-12-16\",\n            \"id\": 2\n        },\n        {\n            \"bodyComment\": \"soy un comentario probando cosas...\",\n            \"date\": \"2020-12-16\",\n            \"id\": 4\n        },\n        {\n            \"bodyComment\": \"soy OTRO comentario de post 1...\",\n            \"date\": \"2020-12-18\",\n            \"id\": 7\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Delete Post",
@@ -411,7 +1495,72 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get Post by Title ",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/post/?word=Lover",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"post",
+										""
+									],
+									"query": [
+										{
+											"key": "word",
+											"value": "Lover"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 19:56:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"title\": \"Lover, You Should've Come Over\",\n        \"description\": \"Lyrics\",\n        \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n        \"dateCreated\": \"2020-12-11\",\n        \"published\": true,\n        \"comments\": [\n            {\n                \"id\": 5,\n                \"bodyComment\": \"soy un comentario de post 2...\",\n                \"date\": \"2020-12-17\"\n            },\n            {\n                \"id\": 6,\n                \"bodyComment\": \"soy OTRO comentario de post 2...\",\n                \"date\": \"2020-12-17\"\n            }\n        ]\n    }\n]"
+						}
+					]
 				},
 				{
 					"name": "Get Not Published Post",
@@ -446,10 +1595,68 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get Not Published Post",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/post/published",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"post",
+										"published"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 19:55:36 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 7,\n        \"title\": \"Soy un post que no me voy a publicar\",\n        \"description\": \"Lyrics\",\n        \"body\": \"Maybe I'm too young To keep good love from going wrong But tonight, you're on my mind so You never know\",\n        \"dateCreated\": \"2020-12-20\",\n        \"published\": false,\n        \"comments\": []\n    }\n]"
+						}
+					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Comment",
@@ -496,7 +1703,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{   \r\n    \"post\": 1,\r\n    \"user_comments\": 1,\r\n    \"bodyComment\": \"soy un comentario probando cosas...\"\r\n \r\n}",
+							"raw": "{   \r\n    \"post\": 1,\r\n    \"user_comments\": 2,\r\n    \"bodyComment\": \"soy OTRO comentario de post 1...\"\r\n \r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -518,7 +1725,65 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Create comment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{   \r\n    \"post\": 1,\r\n    \"user_comments\": 2,\r\n    \"bodyComment\": \"soy OTRO comentario de post 1...\"\r\n \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/comment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"comment"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 19:15:43 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"bodyComment\": \"soy OTRO comentario de post 1...\",\n    \"id\": 7\n}"
+						}
+					]
 				},
 				{
 					"name": "Update Comment",
@@ -550,7 +1815,66 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Update Comment",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bodyComment\": \"Hola soy un comentario que me estoy editando\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080//api/v1/comment/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"comment",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 19:49:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n    \"id\": 2\n}"
+						}
+					]
 				},
 				{
 					"name": "Delete comment",
@@ -583,10 +1907,122 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get comments by PostID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/comment/post?postId=1&num=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"comment",
+								"post"
+							],
+							"query": [
+								{
+									"key": "postId",
+									"value": "1"
+								},
+								{
+									"key": "num",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get comments by PostID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/comment/post?postId=1&num=4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"comment",
+										"post"
+									],
+									"query": [
+										{
+											"key": "postId",
+											"value": "1"
+										},
+										{
+											"key": "num",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Dec 2020 19:16:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 7,\n        \"bodyComment\": \"soy OTRO comentario de post 1...\",\n        \"date\": \"2020-12-18\"\n    },\n    {\n        \"id\": 1,\n        \"bodyComment\": \"Hola probando que este comentario funcione\",\n        \"date\": \"2020-12-16\"\n    },\n    {\n        \"id\": 2,\n        \"bodyComment\": \"Hola soy un comentario que me estoy editando\",\n        \"date\": \"2020-12-16\"\n    },\n    {\n        \"id\": 4,\n        \"bodyComment\": \"soy un comentario probando cosas...\",\n        \"date\": \"2020-12-16\"\n    }\n]"
+						}
+					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
