@@ -38,8 +38,8 @@ public class UserController {
 
     @PutMapping("/{userId}")
     public ResponseEntity<?> updateUser (@PathVariable Long userId, @RequestBody User user){
-
         User updateU = userService.getOne(userId);
+
         updateU.setName(user.getName());
         updateU.setLastName(user.getLastName());
         updateU.setEmail(user.getEmail());

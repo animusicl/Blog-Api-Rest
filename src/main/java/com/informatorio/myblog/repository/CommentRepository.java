@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public interface CommentRepository extends JpaRepository<Comment, Long> {
 
-    @Query(value="SELECT * FROM Comment c WHERE post_id = ?1 LIMIT ?2", nativeQuery = true)
+    @Query(value="SELECT * FROM Comment c WHERE post_id = ?1 ORDER BY c.date  DESC LIMIT ?2", nativeQuery = true)
     List<Comment> CommentsByPostId(Long post_id, Integer num);
 
 }

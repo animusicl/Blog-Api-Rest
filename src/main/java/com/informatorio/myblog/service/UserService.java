@@ -12,9 +12,7 @@ import java.util.stream.Collectors;
 public class UserService {
 
     private UserRepository userRepository;
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+    public UserService(UserRepository userRepository) { this.userRepository = userRepository; }
 
 
     public UserDTO createUser(User newUser) { return new UserDTO(userRepository.save(newUser)); }
@@ -26,6 +24,7 @@ public class UserService {
     }
 
     public UserDTO updateUser(User updateU) {
+
         return new UserDTO(userRepository.save(updateU));
     }
 
