@@ -56,8 +56,10 @@ public class UserController {
 
         User user = userService.getOne(userId);
         userService.delete(user);
+
         return new ResponseEntity<>(HttpStatus.OK);
 
     }
+
 
 }

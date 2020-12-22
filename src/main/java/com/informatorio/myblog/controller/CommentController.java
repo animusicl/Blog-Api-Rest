@@ -40,6 +40,6 @@ public class CommentController {
 
 
     @GetMapping("/post")
-    public ResponseEntity<?> getCommentsByPost(@RequestParam Long postId, @RequestParam Integer num) {
+    public ResponseEntity<?> getCommentsByPost(@RequestParam Long postId, @RequestParam(required=false, defaultValue = "9999999") Integer num) {
         return new ResponseEntity<>(commentService.getCommentsByPost(postId, num), HttpStatus.OK); }
 }
